@@ -1,0 +1,486 @@
+            *
+            {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                scroll-behavior: smooth;
+            }
+            .background
+            {
+                width: 100%;
+                height: 100vh;
+                position: absolute;
+                background-position: top center;
+                background-image: url(uchihasbanner.png);
+                z-index: -1;
+                background-attachment: fixed;
+            }
+            .banner
+            {
+                height: 100vh;
+                width: 100%;
+                position: relative;
+                z-index: 1;
+            }
+
+            #icon
+            {
+                width: 80px;
+                cursor: pointer;
+                z-index: 1000;
+            }
+
+            .sound
+            {
+                position: absolute;
+                bottom: 1%;
+                left: 92%;
+                position: fixed;
+                
+            }
+            .navbar
+            {
+                display: flex;
+                background-color: red;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                padding: 20px;
+
+            }
+
+            .logo
+            {
+                font-size: 26px;
+                color: white;
+                text-transform: uppercase;
+                transition: 0.5s;
+            }
+            .logo:hover
+            {
+                color: violet;
+            }
+
+            .navbar ul li
+            {
+                list-style: none;
+                display: inline-block;
+                margin-left: 10px;
+            }
+
+            .navbar ul li a
+            {
+                text-decoration: none;
+                color: white;
+                font-weight: 600;
+                padding: 10px;
+            }
+
+            .navbar ul li .active{
+                border: solid 2px white;
+            }
+
+
+            li a:hover
+            {
+                background-color: white;
+                transition: 0.5s;
+            }
+
+            .navbar a:hover
+            {
+                color: black;
+            }
+
+            .content
+            {
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                text-align: center;
+                color: white;
+
+            }
+            .content h1
+            {
+                font-size: 80px;
+                    font-family: "Times New Roman", Times, serif;
+                color: white;
+
+            }
+            .content p
+            {
+                font-size: 20px;
+                margin-top: 20px;
+                font-family: "Lucida Console", "Courier New", monospace;
+                letter-spacing: 5px;
+                background-color: red;
+                display: inline-block;
+                
+
+            }
+            .section
+            {
+                height: 100%;
+                width: 100%;
+                background-color: black;
+            }
+
+
+            ::selection {
+              color: white;
+              background: red;
+            }
+            
+            .madaraimg img
+            {
+                width: 50%;
+                height: 650px;
+                z-index: 100;
+            }
+            
+            .content1
+            {
+                width: 80%;
+                text-align: center;
+                align-content: center;
+                color: white;
+            } 
+            .container
+            {
+                justify-content: space-between;
+                position: relative;
+            }
+            .content_madara
+            {
+                color: white;
+                left: 55%;
+                right: 2%;
+                bottom: 25%;
+                width: auto;
+                position: absolute;
+                letter-spacing: 4px;
+            }
+            .content_madara h1
+            {
+                font-size: 50px;
+                font-family: "Times New Roman", Times, serif;
+                padding: 20px;
+                
+            }
+            
+            .content_madara p
+            {
+                
+                font-size: 20px;
+                font-family: "Lucida Console", "Courier New", monospace;
+                letter-spacing: 5px;
+                background-color: red;
+                display: inline-block;
+                margin-left: 220px;
+            }
+
+            .sharingan
+            {
+                position: absolute;
+                top: 12%;
+                left: 38%;
+                cursor: pointer;
+                filter: drop-shadow(0px 0px 10px #ff1212 ) drop-shadow(0px 0px 20px #ff0000 ) drop-shadow(0px 0px 35px #6b1818 );
+                animation: shake 5s linear infinite forwards;
+            }
+
+            @keyframes shake
+            {
+                0%
+                {
+                    transform: translateY(20%);
+                }
+                50%
+                {
+                    transform: translateY(-10%);
+                }
+                100%
+                {
+                    transform: translateY(20%);
+                }
+                
+            }
+
+            
+
+            .rotate
+            {
+                animation: spin 10s infinite;
+                
+            }
+            
+            @keyframes spin 
+            {
+              0% 
+              {
+                transform: rotate(0deg);
+              }
+              100%
+              {
+                transform: rotate(360deg);
+              }
+            }
+
+            
+            
+            .section2
+            {
+                width: 100%;
+                height: 100vh;
+                background-image: url(uchiha_1.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: top;
+            }
+
+            .container1
+            {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                width: 100%;
+                background-image: url(uchiha_1.jpg) ;
+                background-attachment: fixed;
+                background-size: cover;
+                z-index: 10;
+                
+                
+            }
+
+            .container1 input
+            {
+                appearance: none;
+            }
+
+            .container1 .dots
+            {
+                position: absolute;
+                bottom: 70px;
+                z-index: 100;
+                display: flex;
+                gap: 6px;
+            }
+
+            .container1 .dots label
+            {
+                width: 20px;
+                height: 20px;
+                background: #fff;
+                cursor: pointer;
+                border-radius: 50%;
+                opacity: 0.5;
+                border: 2px solid black;
+            }
+            
+            .container1 input:nth-child(1):checked ~ .dots label:nth-child(1),
+            .container1 input:nth-child(2):checked ~ .dots label:nth-child(2),
+            .container1 input:nth-child(3):checked ~ .dots label:nth-child(3),
+            .container1 input:nth-child(4):checked ~ .dots label:nth-child(4),
+            .container1 input:nth-child(5):checked ~ .dots label:nth-child(5)
+            {
+                opacity: 1;
+            }
+
+            .container1 .slider
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .container1 .slider .slide
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: var(--img);
+                opacity: 1;
+                z-index: 1;
+                background-size: cover;
+                clip-path: circle(0% at 0% 50%);
+                transition: 1.5s;
+                transition-delay: 0s;
+                background-position: left;
+            }
+
+            .container1 .slider .slide:nth-child(even)
+            {
+                clip-path: circle(0% at 100% 50%);
+                background-position: right;
+            }
+
+            .container1 input:nth-child(1):checked ~ .slider .slide:nth-child(1),
+            .container1 input:nth-child(2):checked ~ .slider .slide:nth-child(2),
+            .container1 input:nth-child(3):checked ~ .slider .slide:nth-child(3),
+            .container1 input:nth-child(4):checked ~ .slider .slide:nth-child(4),
+            .container1 input:nth-child(5):checked ~ .slider .slide:nth-child(5)
+            {
+                clip-path: circle(150% at 50% 50%);
+                transition-delay: 1s;
+                background-position: center;
+            }
+
+            ::-webkit-scrollbar
+            {
+                width: 15px;
+            }
+
+            ::-webkit-scrollbar-track
+            {
+                background: black;
+                
+            }
+
+            body::-webkit-scrollbar-thumb
+            {
+                background: linear-gradient(to top, #b769c0, #9536bd,rgb(96, 7, 116));
+                border-radius: 5px;
+            }
+            /*width: 2912 height: 1514*/
+
+            /* .section3
+            {
+                width: 100%;
+                height: 100vh;
+                background: white;
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: top;
+            } */
+
+            .character
+            {
+                position: relative;
+                width: 55%;
+                height: auto;
+                /* border: solid 2px white; */
+                padding: 20px;
+                left: 43%;
+                top: 20%;
+                cursor: pointer;
+            }
+
+            .character table h1
+            {
+                color: whitesmoke;
+                font-size: 38px;
+                padding: 8px;
+                transition: 0.5;
+            }
+
+            .character .text-effect
+            {
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-image: linear-gradient( to right, #b620c7, #f52cd7,white,rgb(92, 196, 158),rgb(63, 158, 81));
+                background-size: 400% 400%;
+                transition: 0.5s;
+                animation: text 8s ease-in-out infinite;
+            }
+
+            .text
+            {
+                font-weight: 500;
+            }
+
+            .character .nickname
+            {
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-image: linear-gradient( to right, #b620c7, #f21ad2,white,rgb(86, 237, 182),rgb(169, 185, 172));
+                background-size: 300% 400%;
+                animation: text 10s ease-in-out infinite;
+                animation-delay: 1s;
+            }
+
+            @keyframes text
+            {
+                0%
+                {
+                    background-position: 0 0;
+                }
+                25%
+                {
+                    background-position: 100% 0;
+                }
+                50%
+                {
+                    background-position: 100% 100%;
+                }
+                75%
+                {
+                    background-position: 0 100%;
+                }
+                100%
+                {
+                    background-position: 0 0;
+                }
+            }
+
+            .eyes img
+            {
+                margin-right: 30px;
+                position: relative;
+                filter: drop-shadow(0px 0px 10px #ff1212 ) drop-shadow(0px 0px 20px #ff0000 ) drop-shadow(0px 0px 30px #6b1818 );
+                z-index: 20000;
+                transition: 0.5s;
+                cursor: pointer;
+            }
+
+            .itachi
+            {
+                position: relative;
+                left: 10%;
+            }
+
+            .obito
+            {
+                position: relative;
+                left: 10%;
+            }
+
+            /* .section3
+            {
+                width: 100%;
+                height: 100%;
+                background: black;
+                background-size: cover;
+                background-attachment: fixed;
+                position: absolute;
+                background-position: top;
+                z-index: 100000000;
+                opacity: 0;
+                transform: translate(0, -101%);
+            }
+            
+            @media (max-width: 1000px) 
+            {
+                *
+                {
+                    opacity: 0;
+                }
+                .section3
+                {
+                    opacity: 1;
+
+                }
+
+
+            } */
+

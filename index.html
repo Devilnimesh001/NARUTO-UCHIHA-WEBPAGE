@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>UCHIHA CLAN</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        
+    </head>
+    <body>
+        <div class="banner">
+            <div class="background">
+            </div>
+            <div class="navbar" style="background-color: black;">
+                <p class="logo">UCHIHA</p>
+                
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li class="active" ><a href="#slide" style="border: 2px solid white;" >SLIDE</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <h1>Growth occurs when one goes beyond one's limits. Realizing that is also a part of training.</h1>
+                <p>-Itachi Uchiha</p>
+            </div>
+            <div class="sound">
+                <img src="sound/play.png" style="filter: hue-rotate(290deg);" id="icon">
+            </div>
+        </div>
+        <!-- --->
+
+        <audio id="song">
+            <source src="sound/itachi.mp3" type="audio/mp3">
+        </audio>
+        <script>
+            var song = document.getElementById("song") 
+            var icon = document.getElementById("icon")
+    
+            
+            icon.onclick = function() {
+                if(song.paused){
+                    song.play();
+                    icon.src = "sound/pause.png";
+                }else{
+                    song.pause();
+                    icon.src = "sound/play.png";
+                }
+            }
+    
+     
+        </script>
+        <!-- --->
+
+        <div class="section" id="about">
+            <div class="container">
+                <div class="madaraimg">
+                    <img src="nimesh.png" alt=""/>
+                </div>
+                <div class="sharingan">
+                    <img src="sharingan.png" style="width: 80px; height: 80px;" class="rotate" alt=""/>
+                </div>
+                <div class="content_madara" >
+                    <h1>Wake up to Reality! Nothing ever goes us planned in this accursed world.</h1>
+                    <p>-Madara Uchiha</p>
+                </div>
+                    
+                
+            </div>
+        </div>
+        
+        <div class="section2" id="slide">
+            <div class="container1">
+                <input id="slide1" type="radio" name="group" checked>
+                <input id="slide2" type="radio" name="group">
+                <input id="slide3" type="radio" name="group">
+                <input id="slide4" type="radio" name="group">
+                <input id="slide5" type="radio" name="group">
+                <div class="dots">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                    <label for="slide5"></label>
+                </div>
+                <div class="slider">
+                    <div class="slide" for="slide1" style="--img:url('madara_bg.png')">
+                        <div class="character">
+                            <table>
+                                <tr>
+                                    <td><h1 class="text">NAME :&nbsp;</h1></td>
+                                    <td><h1 class="text-effect">MADARA UCHIHA</h1></td>
+                                </tr>
+                                <tr>
+                                    <td><h1 class="text">NICKNAME :&nbsp;</h1></td>
+                                    <td><h1 class="text-effect nickname">GHOST OF UCHIHA</h1></td>
+                                </tr>
+                                <tr>
+                                    <td><h1 class="text">JUTSU :&nbsp;</h1></td>
+                                    <td><h1 class="text-effect">LIMBO</h1></td>
+                                </tr>
+                                <tr>
+                                    <td>:&nbsp;</td>
+                                    <td>:&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td><h1 class="text">EYES :&nbsp;</h1></td>
+                                    <td>
+                                        <div class="eyes">
+                                            <img src="madara_ems.png" class="rotate" id="image" style="height: 70px; width: 70px;">
+                                            <img src="rinnegan.png" class="rotate image" style="height: 70px; width: 70px; filter: drop-shadow(0px 0px 10px #bd0cbd ) drop-shadow(0px 0px 20px #b232bd ) drop-shadow(0px 0px 30px #5a1c60 );">
+                                            <img src="rinnesharingann.png" class="rotate image" style="height: 70px; width: 70px;">
+                                        </div>
+                                    </td>
+                                      
+                                </tr>  
+
+                            </table>
+                        </div>
+                    </div>
+                    <div class="slide" for="slide2" style="--img:url('itachi_bg.png')">
+                        <div class="character itachi">
+                            <table>
+                                <tr>
+                                    <td><h1 class="text">NAME :&nbsp;</h1></td>
+                                    <td><h1 class="text-effect">ITACHI UCHIHA</h1></td>
+                                </tr>
+                                <tr>
+                                    <td><h1 class="text">NICKNAME :&nbsp;</h1></td>
+                                    <td><h1 class="text-effect nickname">THE CLAN KILLER</h1></td>
+                                </tr>
+                                <tr>
+                                    <td><h1 class="text">JUTSU :&nbsp;</h1></td>
+                                    <td><h1 class="text-effect">TSUKUYOMI</h1></td>
+                                </tr>
+                                <tr>
+                                    <td>:&nbsp;</td>
+                                    <td>:&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td><h1 class="text">EYES :&nbsp;</h1></td>
+                                    <td>
+                                        <div class="eyes">
+                                            <img src="sharingan.png" class="rotate" id="image" style="height: 70px; width: 70px;">
+                                            <img src="itachi_ms.png" class="rotate image" style="height: 70px; width: 70px;">
+                                        </div>
+                                    </td>
+                                      
+                                </tr>  
+
+                            </table>
+                        </div>
+                    </div>
+                    <div class="slide" for="slide3" style="--img:url('sasuke_bg.png')">
+                        <div class="character sasuke">
+                            <table>
+                                <tr>
+                                    <td><h1 class="text">NAME :&nbsp;</h1></td>
+                                    <td><h1 class="text-effect">SASUKE UCHIHA</h1></td>
+                                </tr>
+                                <tr>
+                                    <td><h1 class="text">NICKNAME :&nbsp;</h1></td>
+                                    <td><h1 class="text-effect nickname">SHADOW HOKAGE</h1></td>
+                                </tr>
+                                <tr>
+                                    <td><h1 class="text">JUTSU :&nbsp;</h1></td>
+                                    <td><h1 class="text-effect">CHIDORI</h1></td>
+                                </tr>
+                                <tr>
+                                    <td>:&nbsp;</td>
+                                    <td>:&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td><h1 class="text">EYES :&nbsp;</h1></td>
+                                    <td>
+                                        <div class="eyes">
+                                            <img src="sharingan.png" class="rotate" id="image" style="height: 70px; width: 70px;">
+                                            <img src="sasukeems.png" class="rotate image" style="height: 70px; width: 70px;">
+                                            <img src="sasuke_rinnegan.png" class="rotate image" style="height: 70px; width: 70px; filter: drop-shadow(0px 0px 10px #bd0cbd ) drop-shadow(0px 0px 20px #b232bd ) drop-shadow(0px 0px 30px #5a1c60 );">  
+                                        </div>
+                                    </td>
+                                      
+                                </tr>  
+
+                            </table>
+                        </div>
+                    </div>
+                    <div class="slide" for="slide4" style="--img:url('obito_bg.png')">
+                        <div class="character obito">
+                            <table>
+                                <tr>
+                                    <td><h1 class="text">NAME :&nbsp;</h1></td>
+                                    <td><h1 class="text-effect">OBITO UCHIHA</h1></td>
+                                </tr>
+                                <tr>
+                                    <td><h1 class="text">NICKNAME :&nbsp;</h1></td>
+                                    <td><h1 class="text-effect nickname">BROKEN HERO</h1></td>
+                                </tr>
+                                <tr>
+                                    <td><h1 class="text">JUTSU :&nbsp;</h1></td>
+                                    <td><h1 class="text-effect">KAMUI</h1></td>
+                                </tr>
+                                <tr>
+                                    <td>:&nbsp;</td>
+                                    <td>:&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td><h1 class="text">EYES :&nbsp;</h1></td>
+                                    <td>
+                                        <div class="eyes">
+                                            <img src="sharingan.png" class="rotate" id="image" style="height: 70px; width: 70px;">
+                                            <img src="obims.png" class="rotate image" style="height: 70px; width: 70px;">
+                                        </div>
+                                    </td>
+                                      
+                                </tr>  
+
+                            </table>
+                        </div>
+                    </div>
+                    <div class="slide" for="slide5" style="--img:url('shisui_bg.png')">
+                        <div class="character shisui">
+                            <table>
+                                <tr>
+                                    <td><h1 class="text">NAME :&nbsp;</h1></td>
+                                    <td><h1 class="text-effect">SHISUI UCHIHA</h1></td>
+                                </tr>
+                                <tr>
+                                    <td><h1 class="text">NICKNAME :&nbsp;</h1></td>
+                                    <td><h1 class="text-effect nickname">BODY FLICKER</h1></td>
+                                </tr>
+                                <tr>
+                                    <td><h1 class="text">JUTSU :&nbsp;</h1></td>
+                                    <td><h1 class="text-effect">KOTOAMATSUKAMI</h1></td>
+                                </tr>
+                                <tr>
+                                    <td>:&nbsp;</td>
+                                    <td>:&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td><h1 class="text">EYES :&nbsp;</h1></td>
+                                    <td>
+                                        <div class="eyes">
+                                            <img src="sharingan.png" class="rotate" id="image" style="height: 70px; width: 70px;">
+                                            <img src="shisui_ms.png" class="rotate image" style="height: 70px; width: 70px;">
+                                        </div>
+                                    </td>
+                                      
+                                </tr>  
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
