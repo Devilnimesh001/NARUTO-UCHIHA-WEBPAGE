@@ -30,13 +30,13 @@ and open the template in the editor.
                 <p>-Itachi Uchiha</p>
             </div>
             <div class="sound">
-                <img src="sound/play.png" style="filter: hue-rotate(290deg);" id="icon">
+                <img src="play.png" style="filter: hue-rotate(290deg);" id="icon">
             </div>
         </div>
         <!-- --->
 
         <audio id="song">
-            <source src="sound/itachi.mp3" type="audio/mp3">
+            <source src="itachi.mp3" type="audio/mp3">
         </audio>
         <script>
             var song = document.getElementById("song") 
@@ -46,10 +46,10 @@ and open the template in the editor.
             icon.onclick = function() {
                 if(song.paused){
                     song.play();
-                    icon.src = "sound/pause.png";
+                    icon.src = "pause.png";
                 }else{
                     song.pause();
-                    icon.src = "sound/play.png";
+                    icon.src = "play.png";
                 }
             }
     
